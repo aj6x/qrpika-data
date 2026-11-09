@@ -1,0 +1,2260 @@
+{
+ "format": 1,
+ "built": "2026-11-08T22:57:09Z",
+ "listed": "6 November 2026",
+ "codec": "rans1",
+ "model": "model-5ee4089673.bin",
+ "model_bytes": 1905421,
+ "model_sha256": "5ee40896735abea92a353a9749ef7d7df2428729bda5f33133421740cd0b723c",
+ "summits": "summits-05279f1351.json",
+ "summits_bytes": 927065,
+ "summits_sha256": "05279f1351a74cbc1ed6536032147a6728d02745e4ee7a067e07c7990416435b",
+ "e_offset_db": 2.0,
+ "step_db": 1.0,
+ "gas0": 2,
+ "earth_radius_m": 6371008.8,
+ "antenna_height_m": 2.0,
+ "bands": [
+  {
+   "name": "6m",
+   "mhz": 52.525,
+   "kind": "itm",
+   "fields": [
+    "e",
+    "s10",
+    "s90",
+    "pol",
+    "can"
+   ],
+   "presets": [
+    {
+     "id": "easy",
+     "group": "e",
+     "label": "half-waves, FM",
+     "mode": "fm",
+     "power_dbm": 37.0,
+     "gain_dbi": 4.3,
+     "threshold_dbm": -113.05836544724073,
+     "loss": "V90+C"
+    },
+    {
+     "id": "yagi",
+     "group": "y",
+     "label": "yagis, CW",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -133.05836544724073,
+     "loss": "H90"
+    },
+    {
+     "id": "long",
+     "group": "l",
+     "label": "yagis, CW, half the time",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -133.05836544724073,
+     "loss": "H50"
+    },
+    {
+     "id": "far",
+     "group": "f",
+     "label": "yagis, CW, a tenth of the time",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -133.05836544724073,
+     "loss": "H10"
+    }
+   ]
+  },
+  {
+   "name": "2m",
+   "mhz": 146.0,
+   "kind": "itm",
+   "fields": [
+    "e",
+    "s10",
+    "s90",
+    "pol",
+    "can"
+   ],
+   "presets": [
+    {
+     "id": "duck",
+     "group": "d",
+     "label": "rubber ducks, FM",
+     "mode": "fm",
+     "power_dbm": 37.0,
+     "gain_dbi": -10.8,
+     "threshold_dbm": -119.5,
+     "loss": "V90+C"
+    },
+    {
+     "id": "easy",
+     "group": "e",
+     "label": "half-waves, FM",
+     "mode": "fm",
+     "power_dbm": 37.0,
+     "gain_dbi": 4.3,
+     "threshold_dbm": -119.5,
+     "loss": "V90+C"
+    },
+    {
+     "id": "yagi",
+     "group": "y",
+     "label": "yagis, CW",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -139.5,
+     "loss": "H90"
+    },
+    {
+     "id": "long",
+     "group": "l",
+     "label": "yagis, CW, half the time",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -139.5,
+     "loss": "H50"
+    },
+    {
+     "id": "far",
+     "group": "f",
+     "label": "yagis, CW, a tenth of the time",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -139.5,
+     "loss": "H10"
+    }
+   ]
+  },
+  {
+   "name": "1.25m",
+   "mhz": 223.5,
+   "kind": "itm",
+   "fields": [
+    "e",
+    "s10",
+    "s90",
+    "pol",
+    "can"
+   ],
+   "presets": [
+    {
+     "id": "duck",
+     "group": "d",
+     "label": "rubber ducks, FM",
+     "mode": "fm",
+     "power_dbm": 37.0,
+     "gain_dbi": -10.8,
+     "threshold_dbm": -120.60121830692877,
+     "loss": "V90+C"
+    },
+    {
+     "id": "easy",
+     "group": "e",
+     "label": "half-waves, FM",
+     "mode": "fm",
+     "power_dbm": 37.0,
+     "gain_dbi": 4.3,
+     "threshold_dbm": -120.60121830692877,
+     "loss": "V90+C"
+    },
+    {
+     "id": "yagi",
+     "group": "y",
+     "label": "yagis, CW",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -140.60121830692879,
+     "loss": "H90"
+    },
+    {
+     "id": "long",
+     "group": "l",
+     "label": "yagis, CW, half the time",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -140.60121830692879,
+     "loss": "H50"
+    },
+    {
+     "id": "far",
+     "group": "f",
+     "label": "yagis, CW, a tenth of the time",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 13.5,
+     "threshold_dbm": -140.60121830692879,
+     "loss": "H10"
+    }
+   ]
+  },
+  {
+   "name": "70cm",
+   "mhz": 446.0,
+   "kind": "itm",
+   "fields": [
+    "e",
+    "s10",
+    "s90",
+    "pol",
+    "can"
+   ],
+   "presets": [
+    {
+     "id": "duck",
+     "group": "d",
+     "label": "rubber ducks, FM",
+     "mode": "fm",
+     "power_dbm": 37.0,
+     "gain_dbi": -10.8,
+     "threshold_dbm": -121.24689009810696,
+     "loss": "V90+C"
+    },
+    {
+     "id": "easy",
+     "group": "e",
+     "label": "half-waves, FM",
+     "mode": "fm",
+     "power_dbm": 37.0,
+     "gain_dbi": 4.3,
+     "threshold_dbm": -121.24689009810696,
+     "loss": "V90+C"
+    },
+    {
+     "id": "yagi",
+     "group": "y",
+     "label": "yagis, CW",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 21.0,
+     "threshold_dbm": -141.24689009810697,
+     "loss": "H90"
+    },
+    {
+     "id": "long",
+     "group": "l",
+     "label": "yagis, CW, half the time",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 21.0,
+     "threshold_dbm": -141.24689009810697,
+     "loss": "H50"
+    },
+    {
+     "id": "far",
+     "group": "f",
+     "label": "yagis, CW, a tenth of the time",
+     "mode": "cw",
+     "power_dbm": 37.0,
+     "gain_dbi": 21.0,
+     "threshold_dbm": -141.24689009810697,
+     "loss": "H10"
+    }
+   ]
+  },
+  {
+   "name": "23cm",
+   "mhz": 1296.2,
+   "kind": "itm",
+   "fields": [
+    "e",
+    "s10",
+    "s90",
+    "pol",
+    "can"
+   ],
+   "presets": [
+    {
+     "id": "duck",
+     "group": "d",
+     "label": "1 W handhelds",
+     "mode": "fm",
+     "power_dbm": 30,
+     "gain_dbi": -12.0,
+     "threshold_dbm": -120.95880017344075,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "easy",
+     "group": "e",
+     "label": "2 W, 10-element loop yagis",
+     "mode": "cw",
+     "power_dbm": 33,
+     "gain_dbi": 27.0,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "yagi",
+     "group": "y",
+     "label": "10 W, 22-element loop yagis",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 35.0,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "long",
+     "group": "l",
+     "label": "10 W, 22-element loop yagis",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 35.0,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "H50+C"
+    },
+    {
+     "id": "far",
+     "group": "f",
+     "label": "10 W, 22-element loop yagis",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 35.0,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "H10+C"
+    }
+   ]
+  },
+  {
+   "name": "13cm",
+   "mhz": 2304.1,
+   "kind": "itm",
+   "fields": [
+    "e",
+    "s10",
+    "s90",
+    "pol",
+    "can"
+   ],
+   "presets": [
+    {
+     "id": "duck",
+     "group": "d",
+     "label": "1 W, small yagis or patches",
+     "mode": "cw",
+     "power_dbm": 30,
+     "gain_dbi": 24.0,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "easy",
+     "group": "e",
+     "label": "1 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 30,
+     "gain_dbi": 41.24652355303936,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "yagi",
+     "group": "y",
+     "label": "10 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 41.24652355303936,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "long",
+     "group": "l",
+     "label": "10 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 41.24652355303936,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "H50+C"
+    },
+    {
+     "id": "far",
+     "group": "f",
+     "label": "10 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 41.24652355303936,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "H10+C"
+    }
+   ]
+  },
+  {
+   "name": "6cm",
+   "mhz": 5760.1,
+   "kind": "itm",
+   "fields": [
+    "e",
+    "s10",
+    "s90",
+    "pol",
+    "can"
+   ],
+   "presets": [
+    {
+     "id": "duck",
+     "group": "d",
+     "label": "1 W, small yagis or patches",
+     "mode": "cw",
+     "power_dbm": 30,
+     "gain_dbi": 24.0,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "easy",
+     "group": "e",
+     "label": "1 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 30,
+     "gain_dbi": 57.163671523579595,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "yagi",
+     "group": "y",
+     "label": "10 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 57.163671523579595,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "long",
+     "group": "l",
+     "label": "10 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 57.163671523579595,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "H50+C"
+    },
+    {
+     "id": "far",
+     "group": "f",
+     "label": "10 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 40,
+     "gain_dbi": 57.163671523579595,
+     "threshold_dbm": -147.01575620537395,
+     "loss": "H10+C"
+    }
+   ]
+  },
+  {
+   "name": "3cm",
+   "mhz": 10368.1,
+   "kind": "itm",
+   "fields": [
+    "e",
+    "s10",
+    "s90",
+    "pol",
+    "can"
+   ],
+   "presets": [
+    {
+     "id": "duck",
+     "group": "d",
+     "label": "0.2 W, 20 dBi horns",
+     "mode": "cw",
+     "power_dbm": 23,
+     "gain_dbi": 40.0,
+     "threshold_dbm": -146.86834165172513,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "easy",
+     "group": "e",
+     "label": "0.2 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 23,
+     "gain_dbi": 67.37443768801504,
+     "threshold_dbm": -146.86834165172513,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "yagi",
+     "group": "y",
+     "label": "2 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 33,
+     "gain_dbi": 67.37443768801504,
+     "threshold_dbm": -146.86834165172513,
+     "loss": "max(H90,V90)+C"
+    },
+    {
+     "id": "long",
+     "group": "l",
+     "label": "2 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 33,
+     "gain_dbi": 67.37443768801504,
+     "threshold_dbm": -146.86834165172513,
+     "loss": "H50+C"
+    },
+    {
+     "id": "far",
+     "group": "f",
+     "label": "2 W, 60 cm dishes",
+     "mode": "cw",
+     "power_dbm": 33,
+     "gain_dbi": 67.37443768801504,
+     "threshold_dbm": -146.86834165172513,
+     "loss": "H10+C"
+    }
+   ]
+  },
+  {
+   "name": "1.2cm",
+   "mhz": 24048.1,
+   "kind": "los",
+   "fields": [
+    "e",
+    "dry",
+    "hum"
+   ],
+   "presets": [
+    {
+     "id": "easy-average",
+     "group": "e",
+     "label": "100 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 20,
+     "gain_dbi": 69.94850153682053,
+     "threshold_dbm": -144.36190953833378,
+     "loss": "A",
+     "weather": "average"
+    },
+    {
+     "id": "easy-dry",
+     "group": "e",
+     "label": "100 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 20,
+     "gain_dbi": 69.94850153682053,
+     "threshold_dbm": -144.36190953833378,
+     "loss": "DRY",
+     "weather": "dry"
+    },
+    {
+     "id": "easy-humid",
+     "group": "e",
+     "label": "100 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 20,
+     "gain_dbi": 69.94850153682053,
+     "threshold_dbm": -144.36190953833378,
+     "loss": "HUMID",
+     "weather": "humid"
+    },
+    {
+     "id": "yagi-average",
+     "group": "y",
+     "label": "100 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 20,
+     "gain_dbi": 74.94605100115253,
+     "threshold_dbm": -144.36190953833378,
+     "loss": "A",
+     "weather": "average"
+    },
+    {
+     "id": "yagi-dry",
+     "group": "y",
+     "label": "100 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 20,
+     "gain_dbi": 74.94605100115253,
+     "threshold_dbm": -144.36190953833378,
+     "loss": "DRY",
+     "weather": "dry"
+    },
+    {
+     "id": "yagi-humid",
+     "group": "y",
+     "label": "100 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 20,
+     "gain_dbi": 74.94605100115253,
+     "threshold_dbm": -144.36190953833378,
+     "loss": "HUMID",
+     "weather": "humid"
+    }
+   ],
+   "predict": {
+    "dry": 167,
+    "hum": 231
+   }
+  },
+  {
+   "name": "6mm",
+   "mhz": 47088.1,
+   "kind": "los",
+   "fields": [
+    "e",
+    "dry",
+    "hum"
+   ],
+   "presets": [
+    {
+     "id": "easy-average",
+     "group": "e",
+     "label": "10 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 10,
+     "gain_dbi": 81.6217174516597,
+     "threshold_dbm": -142.10606249242818,
+     "loss": "A",
+     "weather": "average"
+    },
+    {
+     "id": "easy-dry",
+     "group": "e",
+     "label": "10 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 10,
+     "gain_dbi": 81.6217174516597,
+     "threshold_dbm": -142.10606249242818,
+     "loss": "DRY",
+     "weather": "dry"
+    },
+    {
+     "id": "easy-humid",
+     "group": "e",
+     "label": "10 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 10,
+     "gain_dbi": 81.6217174516597,
+     "threshold_dbm": -142.10606249242818,
+     "loss": "HUMID",
+     "weather": "humid"
+    },
+    {
+     "id": "yagi-average",
+     "group": "y",
+     "label": "10 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 10,
+     "gain_dbi": 86.6192669159917,
+     "threshold_dbm": -142.10606249242818,
+     "loss": "A",
+     "weather": "average"
+    },
+    {
+     "id": "yagi-dry",
+     "group": "y",
+     "label": "10 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 10,
+     "gain_dbi": 86.6192669159917,
+     "threshold_dbm": -142.10606249242818,
+     "loss": "DRY",
+     "weather": "dry"
+    },
+    {
+     "id": "yagi-humid",
+     "group": "y",
+     "label": "10 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 10,
+     "gain_dbi": 86.6192669159917,
+     "threshold_dbm": -142.10606249242818,
+     "loss": "HUMID",
+     "weather": "humid"
+    }
+   ],
+   "predict": {
+    "dry": 58,
+    "hum": 95
+   }
+  },
+  {
+   "name": "4mm",
+   "mhz": 75976.1,
+   "kind": "los",
+   "fields": [
+    "e",
+    "dry",
+    "hum"
+   ],
+   "presets": [
+    {
+     "id": "easy-average",
+     "group": "e",
+     "label": "1 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 0,
+     "gain_dbi": 89.93235063396115,
+     "threshold_dbm": -140.0704757220744,
+     "loss": "A",
+     "weather": "average"
+    },
+    {
+     "id": "easy-dry",
+     "group": "e",
+     "label": "1 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 0,
+     "gain_dbi": 89.93235063396115,
+     "threshold_dbm": -140.0704757220744,
+     "loss": "DRY",
+     "weather": "dry"
+    },
+    {
+     "id": "easy-humid",
+     "group": "e",
+     "label": "1 mW, 30 cm dishes",
+     "mode": "cw",
+     "power_dbm": 0,
+     "gain_dbi": 89.93235063396115,
+     "threshold_dbm": -140.0704757220744,
+     "loss": "HUMID",
+     "weather": "humid"
+    },
+    {
+     "id": "yagi-average",
+     "group": "y",
+     "label": "1 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 0,
+     "gain_dbi": 94.92990009829315,
+     "threshold_dbm": -140.0704757220744,
+     "loss": "A",
+     "weather": "average"
+    },
+    {
+     "id": "yagi-dry",
+     "group": "y",
+     "label": "1 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 0,
+     "gain_dbi": 94.92990009829315,
+     "threshold_dbm": -140.0704757220744,
+     "loss": "DRY",
+     "weather": "dry"
+    },
+    {
+     "id": "yagi-humid",
+     "group": "y",
+     "label": "1 mW, 40 cm dishes",
+     "mode": "cw",
+     "power_dbm": 0,
+     "gain_dbi": 94.92990009829315,
+     "threshold_dbm": -140.0704757220744,
+     "loss": "HUMID",
+     "weather": "humid"
+    }
+   ],
+   "predict": {
+    "dry": 112,
+    "hum": 185
+   }
+  }
+ ],
+ "areas": [
+  {
+   "id": "LUM",
+   "file": "links-LUM-04d705e075.bin",
+   "bytes": 832,
+   "sha256": "04d705e075ccf15483fcdb6b43e894885a3368a141035aae0005e1de5872ebe2",
+   "summits": 9
+  },
+  {
+   "id": "LUH",
+   "file": "links-LUH-254f1eba56.bin",
+   "bytes": 585,
+   "sha256": "254f1eba560ca074f759f57ef8ec791b95407855a1ed6dafa86f753dc5af095f",
+   "summits": 6
+  },
+  {
+   "id": "PY2",
+   "file": "links-PY2-b5483b010e.bin",
+   "bytes": 2109,
+   "sha256": "b5483b010ee88cf8304b4c5b607a5caa89d39faa8d2101602754d379e87eca41",
+   "summits": 16
+  },
+  {
+   "id": "PY1",
+   "file": "links-PY1-47e770f25e.bin",
+   "bytes": 1525,
+   "sha256": "47e770f25ec7bcf04924c1c1dc380f724de2cf2a61373d624a0a94f29c548e40",
+   "summits": 11
+  },
+  {
+   "id": "PY4",
+   "file": "links-PY4-c613563f0b.bin",
+   "bytes": 146,
+   "sha256": "c613563f0b71e76de6967fbedc24ea3dbe37b1d40c578784d7b59cb9b71c116f",
+   "summits": 1
+  },
+  {
+   "id": "KH6",
+   "file": "links-KH6-0b57bab5fd.bin",
+   "bytes": 496,
+   "sha256": "0b57bab5fd63a50853ae5211c6befe24ab122f988fa2def7afc735eb647546d1",
+   "summits": 8
+  },
+  {
+   "id": "XE1",
+   "file": "links-XE1-dbff9be216.bin",
+   "bytes": 29,
+   "sha256": "dbff9be216e76c2c8671345a5c83e7b461b201fb248ff3ea281b46eae805f8b5",
+   "summits": 3
+  },
+  {
+   "id": "W6",
+   "file": "links-W6-39725754b4.bin",
+   "bytes": 1861076,
+   "sha256": "39725754b4787c897393622247b6bf8c012883db6b58f1f605bf1c6e376f1ee0",
+   "summits": 605
+  },
+  {
+   "id": "W7A",
+   "file": "links-W7A-b00da43d86.bin",
+   "bytes": 726281,
+   "sha256": "b00da43d866b87a11e2aecff652ba30389bf338526886acf8378b5dd4c2bf260",
+   "summits": 249
+  },
+  {
+   "id": "W5T",
+   "file": "links-W5T-26153228b8.bin",
+   "bytes": 8511,
+   "sha256": "26153228b8557b090792a9e4b0ce6d21f89026feef1862af12da56fb622339b8",
+   "summits": 12
+  },
+  {
+   "id": "W5N",
+   "file": "links-W5N-8432fe1684.bin",
+   "bytes": 464078,
+   "sha256": "8432fe168413304a5ebe087a2f0e7226ce0bfd144fbafa1daae827a3ee4e1c0b",
+   "summits": 169
+  },
+  {
+   "id": "W7U",
+   "file": "links-W7U-a83d5608d7.bin",
+   "bytes": 104835,
+   "sha256": "a83d5608d7ddde013e27ae8417f29351f4f01fb5a5c8604522f35e3f1838a716",
+   "summits": 58
+  },
+  {
+   "id": "W0C",
+   "file": "links-W0C-f1efa8f103.bin",
+   "bytes": 631639,
+   "sha256": "f1efa8f103a5b3a855b14a4d507f9a70e855106f61919c2793a0532ad3fabd8d",
+   "summits": 258
+  },
+  {
+   "id": "W5O",
+   "file": "links-W5O-c624f8da1e.bin",
+   "bytes": 10945,
+   "sha256": "c624f8da1ef509d83ba2b09abd3c6ea4e814d79e30f869481580d9f0da8ac490",
+   "summits": 22
+  },
+  {
+   "id": "W5A",
+   "file": "links-W5A-205ab63f28.bin",
+   "bytes": 22665,
+   "sha256": "205ab63f28e123dc465f17789ece90f38c9808a1e05e1b7d9ea8d58d0e671c05",
+   "summits": 40
+  },
+  {
+   "id": "W0M",
+   "file": "links-W0M-febd2b27d5.bin",
+   "bytes": 7709,
+   "sha256": "febd2b27d5df7579919bb147cf0b6aa21101b40c498f71823a30dbb32c88cdaa",
+   "summits": 13
+  },
+  {
+   "id": "W0I",
+   "file": "links-W0I-cfc5cf164f.bin",
+   "bytes": 273,
+   "sha256": "cfc5cf164f54ad701857a69cf9dc46fe4829c9301c3b55bbc84ef9b9a75b2df7",
+   "summits": 2
+  },
+  {
+   "id": "W9",
+   "file": "links-W9-f74817570c.bin",
+   "bytes": 16856,
+   "sha256": "f74817570cde5dcf1c15873c04064fcf54a70fad9c2a2c1a11744dcca46fa819",
+   "summits": 26
+  },
+  {
+   "id": "K0M",
+   "file": "links-K0M-fa079d5e9b.bin",
+   "bytes": 1163,
+   "sha256": "fa079d5e9bfd4381959d48d53ae8bd5ce8f41f4989dfaf87d4485d2f7f49282f",
+   "summits": 4
+  },
+  {
+   "id": "W0D",
+   "file": "links-W0D-8a94527efc.bin",
+   "bytes": 76705,
+   "sha256": "8a94527efcf969913826d598ddf3bc6e525fc03ec4f53e0f15bb716564492ada",
+   "summits": 68
+  },
+  {
+   "id": "W7Y",
+   "file": "links-W7Y-6e70975cab.bin",
+   "bytes": 39434,
+   "sha256": "6e70975cab26636ac7371fb16da139dc197ecec9943af460ac89368f601bc4d6",
+   "summits": 21
+  },
+  {
+   "id": "W0N",
+   "file": "links-W0N-53f883b946.bin",
+   "bytes": 2579,
+   "sha256": "53f883b94603a871989606544c3f51de31344fd4dc0f4afe3ecb9e861825686a",
+   "summits": 1
+  },
+  {
+   "id": "W7I",
+   "file": "links-W7I-ee42203d6b.bin",
+   "bytes": 131343,
+   "sha256": "ee42203d6b28b68ad61a949c09d4bc26f41d129045677db6d0d4f1811eaf5ca0",
+   "summits": 82
+  },
+  {
+   "id": "W7O",
+   "file": "links-W7O-caf68b6cc5.bin",
+   "bytes": 1006824,
+   "sha256": "caf68b6cc56dc1427d2dd4585ae0adf2998492e52daf6ba21791ce976ca6a2cf",
+   "summits": 252
+  },
+  {
+   "id": "W7N",
+   "file": "links-W7N-fd7bb52c76.bin",
+   "bytes": 146926,
+   "sha256": "fd7bb52c764daa872e71edf2bfe8ef7c91fdc957255d3497f533821a0aa4da46",
+   "summits": 50
+  },
+  {
+   "id": "KLA",
+   "file": "links-KLA-720d65ddcf.bin",
+   "bytes": 447,
+   "sha256": "720d65ddcf136a578cc5126cd82c0dd254f68654d5a284456e121587daed8c11",
+   "summits": 7
+  },
+  {
+   "id": "KLF",
+   "file": "links-KLF-e1b3dde360.bin",
+   "bytes": 129,
+   "sha256": "e1b3dde360c8f2793cdf5a763258631817cfb11bac9f8f2b6d5b9afaa081437d",
+   "summits": 3
+  },
+  {
+   "id": "VE6",
+   "file": "links-VE6-967796864f.bin",
+   "bytes": 40713,
+   "sha256": "967796864f84ca9b466e8e8689b263a1910bfad12b96ded2d43a4ab837765c0a",
+   "summits": 57
+  },
+  {
+   "id": "VE7",
+   "file": "links-VE7-90bbdefb76.bin",
+   "bytes": 184318,
+   "sha256": "90bbdefb7626dba5beeef2c9fb1c5588e07bed95105aa5503f50bb265349cfbe",
+   "summits": 59
+  },
+  {
+   "id": "W7W",
+   "file": "links-W7W-92a9863e7f.bin",
+   "bytes": 1402573,
+   "sha256": "92a9863e7fbd668fe775753f93e456a092f0e851053851c174a6ebb838b94959",
+   "summits": 349
+  },
+  {
+   "id": "W7M",
+   "file": "links-W7M-0abe0ac0a3.bin",
+   "bytes": 41065,
+   "sha256": "0abe0ac0a3f6cac1efcaa7bfb1388446ccaf559f67d19bc1b2af6288316104b9",
+   "summits": 33
+  },
+  {
+   "id": "VE5",
+   "file": "links-VE5-d25f4673c4.bin",
+   "bytes": 3746,
+   "sha256": "d25f4673c488f0675c499c356921aecee539cd1aa8bcd2dbfd789b21117dfcc1",
+   "summits": 6
+  },
+  {
+   "id": "W8M",
+   "file": "links-W8M-e8530b23ae.bin",
+   "bytes": 6733,
+   "sha256": "e8530b23ae2b445ce7a20ba2d26de34034296aaacb5ee2d2b6d0ed2094b627fb",
+   "summits": 19
+  },
+  {
+   "id": "VE2",
+   "file": "links-VE2-04dd2c1795.bin",
+   "bytes": 150605,
+   "sha256": "04dd2c179571cb849feabf0eca2abd0a918a697db247deab390186bf996b7d5b",
+   "summits": 61
+  },
+  {
+   "id": "W1",
+   "file": "links-W1-35d8806470.bin",
+   "bytes": 539756,
+   "sha256": "35d88064702ba70994a036e00e989cc31771a8c32149fe126df4e13337422b28",
+   "summits": 193
+  },
+  {
+   "id": "VE1",
+   "file": "links-VE1-74174ff7c5.bin",
+   "bytes": 1011,
+   "sha256": "74174ff7c55515a7c4dde66d97b97c062fc4808489f7e86320a4a07019f7da18",
+   "summits": 2
+  },
+  {
+   "id": "VY2",
+   "file": "links-VY2-51f37fd478.bin",
+   "bytes": 266,
+   "sha256": "51f37fd47880e1a1b7aff48a2b12e81d42afda32389799037d983202ee11ed7f",
+   "summits": 2
+  },
+  {
+   "id": "OY",
+   "file": "links-OY-ed074f595c.bin",
+   "bytes": 304,
+   "sha256": "ed074f595c1f7c4d2c686af140a137f0ec621e0bff9f483816e64391e9195a66",
+   "summits": 2
+  },
+  {
+   "id": "GM",
+   "file": "links-GM-32a8adbf22.bin",
+   "bytes": 1830342,
+   "sha256": "32a8adbf2213d1e9b8e4c7bef57ccd4f30275de983b6ad74753ade0f40493965",
+   "summits": 472
+  },
+  {
+   "id": "TF",
+   "file": "links-TF-9f27bc7a58.bin",
+   "bytes": 1497,
+   "sha256": "9f27bc7a584dfdb7d7f85a8f533b21789071b68c4fd2d28116e75f3dde362b01",
+   "summits": 20
+  },
+  {
+   "id": "EI",
+   "file": "links-EI-3b4fe3bfbe.bin",
+   "bytes": 436217,
+   "sha256": "3b4fe3bfbe94808e525e4c9a7f73e48703a17d2d0fd85ad8f000339e4974be64",
+   "summits": 116
+  },
+  {
+   "id": "GI",
+   "file": "links-GI-154ef2654b.bin",
+   "bytes": 307869,
+   "sha256": "154ef2654b4ab9d488fa8a174884d0adfdc5ab54611900c857ba27eb68b868b4",
+   "summits": 65
+  },
+  {
+   "id": "GD",
+   "file": "links-GD-df9a6fa422.bin",
+   "bytes": 25639,
+   "sha256": "df9a6fa4224f7e08d6d8e513c6461a768b18c6cba6978f0f5466e476cbd73333",
+   "summits": 5
+  },
+  {
+   "id": "G",
+   "file": "links-G-77b4b85d9c.bin",
+   "bytes": 705726,
+   "sha256": "77b4b85d9c8a5976d285be1ae19ec5523d5d0a9cd3078239cfc0d78ae0c2bf0b",
+   "summits": 173
+  },
+  {
+   "id": "GW",
+   "file": "links-GW-b84930d687.bin",
+   "bytes": 619741,
+   "sha256": "b84930d687abd6c41c47588a9a947418dd9696d9b056e3816da6607d1c19fbd1",
+   "summits": 159
+  },
+  {
+   "id": "GU",
+   "file": "links-GU-0815ab5b78.bin",
+   "bytes": 3197,
+   "sha256": "0815ab5b787a78c6b8d4347aa244c9b483da84b2fc279d314b195d6051cf4d49",
+   "summits": 2
+  },
+  {
+   "id": "GJ",
+   "file": "links-GJ-d32f8403cf.bin",
+   "bytes": 1478,
+   "sha256": "d32f8403cf5533858467864de985827b19efde6b04cc325ec38e6df1cbb6c238",
+   "summits": 1
+  },
+  {
+   "id": "FL",
+   "file": "links-FL-89f261542e.bin",
+   "bytes": 1861493,
+   "sha256": "89f261542ef3d013344a2e1eb7cbe5864e7a307c00c6e4e5b39363e8b6e09548",
+   "summits": 234
+  },
+  {
+   "id": "EA2",
+   "file": "links-EA2-8d6efaabab.bin",
+   "bytes": 695716,
+   "sha256": "8d6efaababfdab51fa6d9002c48efb847cbbed2b899f0853759dd3d93f24edb8",
+   "summits": 238
+  },
+  {
+   "id": "EA1",
+   "file": "links-EA1-0449f3cda5.bin",
+   "bytes": 786422,
+   "sha256": "0449f3cda5ae26199fabdbd2b3464ddd5297c61d9eb56578239a4411ff8bb309",
+   "summits": 239
+  },
+  {
+   "id": "F",
+   "file": "links-F-aa346e8a15.bin",
+   "bytes": 1922628,
+   "sha256": "aa346e8a15c08cb3250c886b3cd5c02949c59df145f7078d6117a4eab990a3c6",
+   "summits": 335
+  },
+  {
+   "id": "EA4",
+   "file": "links-EA4-6d948333be.bin",
+   "bytes": 195696,
+   "sha256": "6d948333be50f2e13d61434ee1e6049e060b39585d12e11a080512d244271d71",
+   "summits": 53
+  },
+  {
+   "id": "EA5",
+   "file": "links-EA5-d7489476d4.bin",
+   "bytes": 109869,
+   "sha256": "d7489476d47d1bd22625e2c2294b0dae4fe2d694d016b9940412905ba0f4034e",
+   "summits": 51
+  },
+  {
+   "id": "CT",
+   "file": "links-CT-614c4e2504.bin",
+   "bytes": 442608,
+   "sha256": "614c4e2504c59618e83bc4c10e512635136887be1398894551c85b730509a3b0",
+   "summits": 203
+  },
+  {
+   "id": "EA7",
+   "file": "links-EA7-bf4d137936.bin",
+   "bytes": 69257,
+   "sha256": "bf4d137936f9191bd1d0231a27c9a83aeebc323690692694481d60b485f49071",
+   "summits": 51
+  },
+  {
+   "id": "ZB2",
+   "file": "links-ZB2-3e2ba77f51.bin",
+   "bytes": 780,
+   "sha256": "3e2ba77f51af46f534967ccec537bc84bbac7fd1b5cf7d120ea52958719d7ed4",
+   "summits": 1
+  },
+  {
+   "id": "EA9",
+   "file": "links-EA9-f09944a30b.bin",
+   "bytes": 687,
+   "sha256": "f09944a30bc780b5d4c3d091648dc8e43352adcfcc7d6b22e44c039965fcaa49",
+   "summits": 1
+  },
+  {
+   "id": "EA8",
+   "file": "links-EA8-a0669bfc08.bin",
+   "bytes": 12011,
+   "sha256": "a0669bfc08469ec0d12722abc48623045cc9558ea0090e92c8de64acba9bb480",
+   "summits": 47
+  },
+  {
+   "id": "CT3",
+   "file": "links-CT3-dad9c7c70a.bin",
+   "bytes": 1370,
+   "sha256": "dad9c7c70ad672479fd8dde8a3da4c3ab6c3855de5011620142ad2741e5bbe29",
+   "summits": 7
+  },
+  {
+   "id": "CU",
+   "file": "links-CU-e6fab57081.bin",
+   "bytes": 467,
+   "sha256": "e6fab5708120926b9ffbe669dde81480d347cdd813ca2746a27d88f2839f588d",
+   "summits": 9
+  },
+  {
+   "id": "W2",
+   "file": "links-W2-519af050c2.bin",
+   "bytes": 397705,
+   "sha256": "519af050c206211163be205cfec997cdcca0d70ef831591c56eba01885d372d0",
+   "summits": 126
+  },
+  {
+   "id": "W3",
+   "file": "links-W3-8a6be6b981.bin",
+   "bytes": 233798,
+   "sha256": "8a6be6b981ba568a4db49bd0e6ca249cefdec84dbefe4fadbc2b50fed0c97fc2",
+   "summits": 81
+  },
+  {
+   "id": "W8V",
+   "file": "links-W8V-3907c0048a.bin",
+   "bytes": 87971,
+   "sha256": "3907c0048acf643798aef51fc598d7a135a4c335a1d73d8f150b24d66f0bd534",
+   "summits": 27
+  },
+  {
+   "id": "VE3",
+   "file": "links-VE3-28b362eead.bin",
+   "bytes": 1044,
+   "sha256": "28b362eead102dc7ce6a1efc2b25251d2af104226ce392c82c7c2c21d4c24d6a",
+   "summits": 1
+  },
+  {
+   "id": "W8O",
+   "file": "links-W8O-9dfef39a3a.bin",
+   "bytes": 43295,
+   "sha256": "9dfef39a3a04b2a7a2a37a8bcd6bf1a05863345fd04ac8ba115358236a01f457",
+   "summits": 16
+  },
+  {
+   "id": "W4V",
+   "file": "links-W4V-7a0cad84a6.bin",
+   "bytes": 402529,
+   "sha256": "7a0cad84a66087d7a84177ef42a841e061877e06eef1e6d66d9281c2b7d7a2af",
+   "summits": 128
+  },
+  {
+   "id": "W4K",
+   "file": "links-W4K-c087bdbf7c.bin",
+   "bytes": 51340,
+   "sha256": "c087bdbf7c9cdc166ff9b2e5f85c0595b24b1aea3823698a71fec7e122e69e39",
+   "summits": 14
+  },
+  {
+   "id": "W4T",
+   "file": "links-W4T-6de5059638.bin",
+   "bytes": 202083,
+   "sha256": "6de5059638b452b74947723616194bb271c04ab48fa13010a156903ca7fa9008",
+   "summits": 64
+  },
+  {
+   "id": "W4A",
+   "file": "links-W4A-e039055af4.bin",
+   "bytes": 40790,
+   "sha256": "e039055af4aceceba2f8dd152ea7f3cb74b2977eee27e49a1cca58c6c009cbf8",
+   "summits": 17
+  },
+  {
+   "id": "W4G",
+   "file": "links-W4G-80104d629a.bin",
+   "bytes": 212439,
+   "sha256": "80104d629a479c293f2eeef33e020671855c828518a1ff7eb29ac68283c76a25",
+   "summits": 84
+  },
+  {
+   "id": "W4C",
+   "file": "links-W4C-150348d63a.bin",
+   "bytes": 438419,
+   "sha256": "150348d63a054d0468a14728bc6aab5dd264ece2406c074e2de2196b53e00eb1",
+   "summits": 146
+  },
+  {
+   "id": "W5M",
+   "file": "links-W5M-9a89505c15.bin",
+   "bytes": 589,
+   "sha256": "9a89505c15e029250a00d6476ad890b8ebae7f82d34c817d38b22e768b65c2eb",
+   "summits": 1
+  },
+  {
+   "id": "KP4",
+   "file": "links-KP4-e02e749fdc.bin",
+   "bytes": 325,
+   "sha256": "e02e749fdcaeb8d6b82ff46caa853146ad94fc9b9cf8331d6ef860aa8de65d70",
+   "summits": 6
+  },
+  {
+   "id": "HI",
+   "file": "links-HI-6b67004636.bin",
+   "bytes": 103,
+   "sha256": "6b6700463638fd8cdfa901b81209466a2ff42a0e36846278ba556a88cc607e0a",
+   "summits": 2
+  },
+  {
+   "id": "TI",
+   "file": "links-TI-395cee8624.bin",
+   "bytes": 137,
+   "sha256": "395cee86247f4da7794ab52643d7e660ac6d051bc47c0c1ffb46346e3c7e29dc",
+   "summits": 6
+  },
+  {
+   "id": "LZ",
+   "file": "links-LZ-43d1ef6ccc.bin",
+   "bytes": 158911,
+   "sha256": "43d1ef6ccc7414844ea5b6ca41c160554542aebf31b0231023ca9878e5c84f7b",
+   "summits": 74
+  },
+  {
+   "id": "YU",
+   "file": "links-YU-8470100fcd.bin",
+   "bytes": 307675,
+   "sha256": "8470100fcd8271df80638a9f6df588aa19126a36785fd8777c185614f29e47db",
+   "summits": 70
+  },
+  {
+   "id": "SV",
+   "file": "links-SV-699d613792.bin",
+   "bytes": 465245,
+   "sha256": "699d6137924147d962f1716335785a2e6beabde2bfd35b43a19867c94fc5634b",
+   "summits": 269
+  },
+  {
+   "id": "5B",
+   "file": "links-5B-67f1ca931b.bin",
+   "bytes": 599,
+   "sha256": "67f1ca931bb58530b7bd8cbeb9dfdefd1c07ae25ea30f3a1cdd5bf53e4febbf7",
+   "summits": 11
+  },
+  {
+   "id": "9H",
+   "file": "links-9H-2528ec278b.bin",
+   "bytes": 134,
+   "sha256": "2528ec278b76e89a12f846cc829ee350820afd730a7e944599f0c32f88e2abfc",
+   "summits": 2
+  },
+  {
+   "id": "I",
+   "file": "links-I-d528ab00d2.bin",
+   "bytes": 3381344,
+   "sha256": "d528ab00d28bcb04e5ec24d407b5ef83e2e8c0e432f9979381eccbf80ebd7553",
+   "summits": 360
+  },
+  {
+   "id": "Z3",
+   "file": "links-Z3-66beb3dfb2.bin",
+   "bytes": 11765,
+   "sha256": "66beb3dfb25d70b11c02ec84e9a15c887d0ac382bfba4bbf413d180037d69808",
+   "summits": 5
+  },
+  {
+   "id": "9A",
+   "file": "links-9A-71dbea07b9.bin",
+   "bytes": 983745,
+   "sha256": "71dbea07b9b3ab8e4adba0ecdfe9769396e552a79b6f902faa616958f6ad7889",
+   "summits": 126
+  },
+  {
+   "id": "E7",
+   "file": "links-E7-cf078727eb.bin",
+   "bytes": 154501,
+   "sha256": "cf078727ebf0b24826c84f68eed6cfc0622599f14b8f1ed898d07dfe4758e47a",
+   "summits": 27
+  },
+  {
+   "id": "4O",
+   "file": "links-4O-a68b86267d.bin",
+   "bytes": 3309,
+   "sha256": "a68b86267df990c40c20b86d859034c7a3d2c5f84daaa562e768b6ec93c6fd01",
+   "summits": 1
+  },
+  {
+   "id": "TK",
+   "file": "links-TK-81583f399d.bin",
+   "bytes": 25677,
+   "sha256": "81583f399de5179f08f6d05bbc3d3eddfdf2f503b29cf1e8c111769d9ef828ff",
+   "summits": 6
+  },
+  {
+   "id": "IS0",
+   "file": "links-IS0-5ae0b5c759.bin",
+   "bytes": 18625,
+   "sha256": "5ae0b5c759d2834a58f3fa88a7013986345cb08c6010e72a72fe2c71e8a1541e",
+   "summits": 12
+  },
+  {
+   "id": "EA6",
+   "file": "links-EA6-e34da1455d.bin",
+   "bytes": 88346,
+   "sha256": "e34da1455da9bbb1fb95b68b4418a1ffe0a7ed8f38747843a965cc6af6c82d13",
+   "summits": 52
+  },
+  {
+   "id": "EA3",
+   "file": "links-EA3-e131811378.bin",
+   "bytes": 216427,
+   "sha256": "e1318113780ee964e9ce489e0f1dabc550bd55ef25b786ae15fa93fa8e67971f",
+   "summits": 67
+  },
+  {
+   "id": "C3",
+   "file": "links-C3-7195baf7d2.bin",
+   "bytes": 2947,
+   "sha256": "7195baf7d247ef0c12583020c761c4df5fb22497f73868d8ab3cab3642a524ad",
+   "summits": 1
+  },
+  {
+   "id": "HB",
+   "file": "links-HB-9f9f347e3a.bin",
+   "bytes": 5794578,
+   "sha256": "9f9f347e3ae3880e07d5017722148f9bfeeb6fb2b8f3405626bae93c2c416344",
+   "summits": 577
+  },
+  {
+   "id": "HB0",
+   "file": "links-HB0-71ebdf2526.bin",
+   "bytes": 107447,
+   "sha256": "71ebdf25260a61b6b5d15414e3e313d282a0d420117c3401d9e689e24870fbcd",
+   "summits": 9
+  },
+  {
+   "id": "OE-N45E005",
+   "file": "links-OE-N45E005-c65c787652.bin",
+   "bytes": 350040,
+   "sha256": "c65c787652d3fb5feea7515773ee01e2b1fff40e7217922a08b7012df3829d6a",
+   "summits": 31
+  },
+  {
+   "id": "OE-N45E010",
+   "file": "links-OE-N45E010-e8afc91c23.bin",
+   "bytes": 5486973,
+   "sha256": "e8afc91c23d7de1a5b318b871367b6165769d1ddae2a6e0d901816e74e0a5371",
+   "summits": 460
+  },
+  {
+   "id": "DL",
+   "file": "links-DL-cd7ad36cf9.bin",
+   "bytes": 2419172,
+   "sha256": "cd7ad36cf9d71e6567e32cf050648691db8ef8716d3f77edb10dbca7658f2c66",
+   "summits": 185
+  },
+  {
+   "id": "DM",
+   "file": "links-DM-4e02c73853.bin",
+   "bytes": 3941012,
+   "sha256": "4e02c738537d4fbb1e0ef59d828e1f28b5ff684b8695c81a699d81d58563b22b",
+   "summits": 422
+  },
+  {
+   "id": "LX",
+   "file": "links-LX-4e5fd72851.bin",
+   "bytes": 30131,
+   "sha256": "4e5fd7285195672a868f0b1eda187cf3c8473a78402497fb0d799bfabf45edf8",
+   "summits": 4
+  },
+  {
+   "id": "ON",
+   "file": "links-ON-1a3f6505ef.bin",
+   "bytes": 100097,
+   "sha256": "1a3f6505efda60fb74b6b771659d1b78b49ec9bef4c69f18a706dd41973b4bf8",
+   "summits": 18
+  },
+  {
+   "id": "OZ",
+   "file": "links-OZ-c013e98b31.bin",
+   "bytes": 10499,
+   "sha256": "c013e98b310766022140c84656b5eb829d4b147d4bf657ba4fef0e311e6e5e58",
+   "summits": 12
+  },
+  {
+   "id": "PA",
+   "file": "links-PA-105e19de3e.bin",
+   "bytes": 6885,
+   "sha256": "105e19de3e96681329b38242b7902b5cdab3d5308a41bd104a09114caf4c28ab",
+   "summits": 2
+  },
+  {
+   "id": "OK",
+   "file": "links-OK-11fb5268ec.bin",
+   "bytes": 2152132,
+   "sha256": "11fb5268ec7ce8d77c0009e1f1b957a7c45d6b54903e8907ee33cc4928008582",
+   "summits": 213
+  },
+  {
+   "id": "SP",
+   "file": "links-SP-6df86970ec.bin",
+   "bytes": 1143466,
+   "sha256": "6df86970ec8b5ab26b4e9ab7484f82e15594d85b85db296e59bffd3a008aef21",
+   "summits": 202
+  },
+  {
+   "id": "LY",
+   "file": "links-LY-6a9a0afa7c.bin",
+   "bytes": 262,
+   "sha256": "6a9a0afa7c9128140dc06cbd149115042f581a53f1acbc4d0ed33e48a109b868",
+   "summits": 3
+  },
+  {
+   "id": "OM",
+   "file": "links-OM-8d1af77858.bin",
+   "bytes": 1702136,
+   "sha256": "8d1af778586b117c711c4fd79e2d09954584839e0e65237700247a4c0112096c",
+   "summits": 206
+  },
+  {
+   "id": "HA",
+   "file": "links-HA-ddac565e6e.bin",
+   "bytes": 1759410,
+   "sha256": "ddac565e6e5e8bdf4ec9c5930859692870e196d909bfdcb6ce2a7c82e9ca287c",
+   "summits": 191
+  },
+  {
+   "id": "OE-N45E015",
+   "file": "links-OE-N45E015-c45becbf99.bin",
+   "bytes": 2511966,
+   "sha256": "c45becbf99336e34d341cfe034ce336c45c024db4ad4bd95f02a5b45f20125e8",
+   "summits": 224
+  },
+  {
+   "id": "S5",
+   "file": "links-S5-33eea14b45.bin",
+   "bytes": 3573168,
+   "sha256": "33eea14b45e3562d6f4ab06791a157e26cb6acf861c224182f6ab7be3c4f6b69",
+   "summits": 360
+  },
+  {
+   "id": "YO",
+   "file": "links-YO-faab66153c.bin",
+   "bytes": 527029,
+   "sha256": "faab66153c134672136b045c584193bf3987277f16d366162e7d23ff3c583a43",
+   "summits": 177
+  },
+  {
+   "id": "UT",
+   "file": "links-UT-aa04e0cdf2.bin",
+   "bytes": 5158,
+   "sha256": "aa04e0cdf27235c4e4e2a035709cd875da0d7968abe448bf1f4396c20f17feb2",
+   "summits": 1
+  },
+  {
+   "id": "YL",
+   "file": "links-YL-875f0d460a.bin",
+   "bytes": 244,
+   "sha256": "875f0d460ac3f64be54d0025ede2be8a51677a71619e06b14218e2fd14ee2d61",
+   "summits": 3
+  },
+  {
+   "id": "ES",
+   "file": "links-ES-41deb04ad9.bin",
+   "bytes": 384,
+   "sha256": "41deb04ad99941a0ed1e97d6ce6cf2ec0d4c160f6acedbb4f15104899e1c577b",
+   "summits": 3
+  },
+  {
+   "id": "OH",
+   "file": "links-OH-42467c9bf4.bin",
+   "bytes": 3263,
+   "sha256": "42467c9bf4dc23221bed5cde2f9b2a0c9173a130971e7c03ba80ba63bd603d0d",
+   "summits": 27
+  },
+  {
+   "id": "SM",
+   "file": "links-SM-bfde1b6e20.bin",
+   "bytes": 8963,
+   "sha256": "bfde1b6e201d84323a5a8a2d427ac29542f293a33315e6f35a2ee5871ed39e7d",
+   "summits": 9
+  },
+  {
+   "id": "LA",
+   "file": "links-LA-950512ff0e.bin",
+   "bytes": 215950,
+   "sha256": "950512ff0e648dbe930fd111182d4ab0e6b616dba396a4dc7fd85aabcba71e6d",
+   "summits": 208
+  },
+  {
+   "id": "R9U",
+   "file": "links-R9U-8201267105.bin",
+   "bytes": 131,
+   "sha256": "8201267105933547b208da7d2116273390870c52c26bf01eb58bdf875ccc6b4a",
+   "summits": 5
+  },
+  {
+   "id": "JA8",
+   "file": "links-JA8-11d9a53fa2.bin",
+   "bytes": 3560,
+   "sha256": "11d9a53fa2cd755ed33a99488f81894e6abdc1773fbe0ae118fc6a180121beef",
+   "summits": 12
+  },
+  {
+   "id": "JA",
+   "file": "links-JA-ac9f997182.bin",
+   "bytes": 3734074,
+   "sha256": "ac9f99718270d29e4edd895ad81e1ce5c43bb9acba55127c30d640ae7b4588a2",
+   "summits": 954
+  },
+  {
+   "id": "HL",
+   "file": "links-HL-8105135b45.bin",
+   "bytes": 879192,
+   "sha256": "8105135b45aa367b4885db18aa54e48a16bbe59bdc2c31c1de4738ab81c03002",
+   "summits": 413
+  },
+  {
+   "id": "JA5",
+   "file": "links-JA5-7cd8ce16d5.bin",
+   "bytes": 133175,
+   "sha256": "7cd8ce16d5d10a9a6d373e719db2034e5b3391c5adbd7d18ae67755d707b6a0c",
+   "summits": 37
+  },
+  {
+   "id": "JA6",
+   "file": "links-JA6-86a74a0c8a.bin",
+   "bytes": 100028,
+   "sha256": "86a74a0c8ae2b7355f0b67e2bba07e685aa4d0a3c68e1cf36b0c55e6c9966f8b",
+   "summits": 39
+  },
+  {
+   "id": "BV",
+   "file": "links-BV-56ebd84344.bin",
+   "bytes": 460,
+   "sha256": "56ebd84344270e57712fa427833ee6addad11f6d3bc1f2f05cce78352d0d81d8",
+   "summits": 13
+  },
+  {
+   "id": "ZL1",
+   "file": "links-ZL1-125a313685.bin",
+   "bytes": 25495,
+   "sha256": "125a31368556bdf791a90a0dd25ad9023735d188e831f709127605440a933dc6",
+   "summits": 68
+  },
+  {
+   "id": "ZL3",
+   "file": "links-ZL3-cce1e60e63.bin",
+   "bytes": 14955,
+   "sha256": "cce1e60e63c2707a9832efcbc64756b111be9d695e8465d654b497c2fd2f0e30",
+   "summits": 52
+  },
+  {
+   "id": "VK2",
+   "file": "links-VK2-cbc9f83300.bin",
+   "bytes": 126150,
+   "sha256": "cbc9f833008950af5bdd8ca24dbe6de8f3fdd24e9b78076add4b963c1f9850b9",
+   "summits": 109
+  },
+  {
+   "id": "VK1",
+   "file": "links-VK1-255d1a5b7a.bin",
+   "bytes": 30044,
+   "sha256": "255d1a5b7a0673f717d3c8fa1921dab1ba26393b43f1a85fb35a38cb5cefc20a",
+   "summits": 23
+  },
+  {
+   "id": "VK3",
+   "file": "links-VK3-10c9121bf1.bin",
+   "bytes": 307424,
+   "sha256": "10c9121bf1373d2176b1f545e5e3311a9fd44dafb47977c8b6e56980b6ff693d",
+   "summits": 218
+  },
+  {
+   "id": "VK7",
+   "file": "links-VK7-36a0bd76af.bin",
+   "bytes": 6292,
+   "sha256": "36a0bd76afaecff37362c7f962a20493f4ff77ccc45fc6f8e9942c8ee5302874",
+   "summits": 22
+  },
+  {
+   "id": "VK5",
+   "file": "links-VK5-635d949138.bin",
+   "bytes": 11535,
+   "sha256": "635d94913897efbd21319c963ec6a914488f7856aeaf54bacd5ad2e568af7ba7",
+   "summits": 45
+  },
+  {
+   "id": "VK4",
+   "file": "links-VK4-cfa1520cf0.bin",
+   "bytes": 2652,
+   "sha256": "cfa1520cf01569b26327dbc5810a2b5e82fbbf19ecfbac8b2b0f1ea0bd851cfb",
+   "summits": 17
+  },
+  {
+   "id": "VK6",
+   "file": "links-VK6-35780308a7.bin",
+   "bytes": 256,
+   "sha256": "35780308a7d3954e279d9ee903d26ff1c5931823a3794787dea9941399b24f36",
+   "summits": 7
+  },
+  {
+   "id": "YBJ",
+   "file": "links-YBJ-f87fba62fc.bin",
+   "bytes": 2961,
+   "sha256": "f87fba62fc86e84a6165086b8a0770604b0f1f28f2fb06502cc6e5e19d3ef7f0",
+   "summits": 24
+  },
+  {
+   "id": "ZS",
+   "file": "links-ZS-c6f5edee4b.bin",
+   "bytes": 6242,
+   "sha256": "c6f5edee4bc8b627e86b9bf0b95dd166ce74d4b5fd78b7d7c910c0f4abc4f63b",
+   "summits": 44
+  }
+ ],
+ "total_bytes": 65667234,
+ "base_url": null,
+ "fallback_hosts": [
+  "https://data.aj6x.com/s2s/"
+ ],
+ "min_app": 1,
+ "notice": null,
+ "free_areas": [
+  "W5N",
+  "KH6"
+ ],
+ "rfi": {
+  "format": 1,
+  "codec": "deflate",
+  "index": "rfi-index-fdcced8c35.json",
+  "index_bytes": 73473,
+  "index_sha256": "fdcced8c35599104bcc4a3bb9949b510ee9ecd3014dc75e3af99953ae83387e6",
+  "radius_km": 30,
+  "floor_dbuv": 75.0,
+  "base_dbuv": 60,
+  "rx_height_m": 2.0,
+  "zone_drop_m": 25.0,
+  "built": "2026-11-08T22:57:09Z",
+  "sources": {
+   "uls": "2026-10-31",
+   "uls_states": 59,
+   "broadcast_states": [
+    "AK",
+    "AL",
+    "AR",
+    "AS",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DC",
+    "DE",
+    "FL",
+    "GA",
+    "GU",
+    "HI",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MP",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "PR",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VI",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+   ],
+   "nwr": true
+  },
+  "bins": [
+   {
+    "lo": 0,
+    "hi": 30
+   },
+   {
+    "lo": 30,
+    "hi": 47
+   },
+   {
+    "lo": 47,
+    "hi": 50
+   },
+   {
+    "lo": 50,
+    "hi": 54
+   },
+   {
+    "lo": 54,
+    "hi": 60
+   },
+   {
+    "lo": 60,
+    "hi": 72
+   },
+   {
+    "lo": 72,
+    "hi": 88
+   },
+   {
+    "lo": 88,
+    "hi": 108
+   },
+   {
+    "lo": 108,
+    "hi": 118
+   },
+   {
+    "lo": 118,
+    "hi": 137
+   },
+   {
+    "lo": 137,
+    "hi": 140
+   },
+   {
+    "lo": 140,
+    "hi": 144
+   },
+   {
+    "lo": 144,
+    "hi": 148
+   },
+   {
+    "lo": 148,
+    "hi": 150
+   },
+   {
+    "lo": 150,
+    "hi": 152
+   },
+   {
+    "lo": 152,
+    "hi": 155
+   },
+   {
+    "lo": 155,
+    "hi": 158
+   },
+   {
+    "lo": 158,
+    "hi": 162
+   },
+   {
+    "lo": 162,
+    "hi": 174
+   },
+   {
+    "lo": 174,
+    "hi": 200
+   },
+   {
+    "lo": 200,
+    "hi": 216
+   },
+   {
+    "lo": 216,
+    "hi": 220
+   },
+   {
+    "lo": 220,
+    "hi": 222
+   },
+   {
+    "lo": 222,
+    "hi": 225
+   },
+   {
+    "lo": 225,
+    "hi": 230
+   },
+   {
+    "lo": 230,
+    "hi": 300
+   },
+   {
+    "lo": 300,
+    "hi": 400
+   },
+   {
+    "lo": 400,
+    "hi": 410
+   },
+   {
+    "lo": 410,
+    "hi": 420
+   },
+   {
+    "lo": 420,
+    "hi": 450
+   },
+   {
+    "lo": 450,
+    "hi": 455
+   },
+   {
+    "lo": 455,
+    "hi": 460
+   },
+   {
+    "lo": 460,
+    "hi": 470
+   },
+   {
+    "lo": 470,
+    "hi": 512
+   },
+   {
+    "lo": 512,
+    "hi": 608
+   },
+   {
+    "lo": 608,
+    "hi": 700
+   },
+   {
+    "lo": 700,
+    "hi": 800
+   },
+   {
+    "lo": 800,
+    "hi": 851
+   },
+   {
+    "lo": 851,
+    "hi": 870
+   },
+   {
+    "lo": 870,
+    "hi": 900
+   },
+   {
+    "lo": 900,
+    "hi": 935
+   },
+   {
+    "lo": 935,
+    "hi": 960
+   },
+   {
+    "lo": 960,
+    "hi": 1000
+   },
+   {
+    "lo": 1000,
+    "hi": 1200
+   },
+   {
+    "lo": 1200,
+    "hi": 1240
+   },
+   {
+    "lo": 1240,
+    "hi": 1300
+   },
+   {
+    "lo": 1300,
+    "hi": 1400
+   },
+   {
+    "lo": 1400,
+    "hi": 1700
+   },
+   {
+    "lo": 1700,
+    "hi": 2000
+   },
+   {
+    "lo": 2000,
+    "hi": 2200
+   },
+   {
+    "lo": 2200,
+    "hi": 2300
+   },
+   {
+    "lo": 2300,
+    "hi": 2450
+   },
+   {
+    "lo": 2450,
+    "hi": 2600
+   },
+   {
+    "lo": 2600,
+    "hi": 3000
+   }
+  ],
+  "areas": [
+   {
+    "id": "KH6",
+    "file": "rfi-KH6-d90d8c88f6.bin",
+    "bytes": 13140,
+    "sha256": "d90d8c88f6dc55ab7fcb07e1f1f9ece422e2be5abf1608f291624c2b835f9d75",
+    "summits": 8
+   },
+   {
+    "id": "W6",
+    "file": "rfi-W6-40b8c3dedf.bin",
+    "bytes": 1279803,
+    "sha256": "40b8c3dedfa0e36f4784dc1f9ede35dd2027053c1acb67a4be14681154e1e6a8",
+    "summits": 605
+   },
+   {
+    "id": "W7A",
+    "file": "rfi-W7A-077a435275.bin",
+    "bytes": 367322,
+    "sha256": "077a4352753bd952898e7b4a497d12f0237e02aa702a83cb1a23905cb6dce67a",
+    "summits": 249
+   },
+   {
+    "id": "W5T",
+    "file": "rfi-W5T-04bbcd0d1f.bin",
+    "bytes": 16867,
+    "sha256": "04bbcd0d1ff6e71344a6de5595af004ef7f2c82d9cd9f18ab9e21157a77c461d",
+    "summits": 12
+   },
+   {
+    "id": "W5N",
+    "file": "rfi-W5N-8e89993442.bin",
+    "bytes": 225735,
+    "sha256": "8e8999344279fb55961ae4ebcc9a4db6ac11c01e1196a4590c1d59851e26595f",
+    "summits": 169
+   },
+   {
+    "id": "W7U",
+    "file": "rfi-W7U-305a05820d.bin",
+    "bytes": 82726,
+    "sha256": "305a05820d04b66d3534653cec839034ff7cd1760895ae2e8e92fbfc3076eb8f",
+    "summits": 58
+   },
+   {
+    "id": "W0C",
+    "file": "rfi-W0C-dddd97bf9c.bin",
+    "bytes": 344752,
+    "sha256": "dddd97bf9ca3cc6bf889a5ffd0076061d0a89b6ced8f8593e2cae553c5dea0f7",
+    "summits": 258
+   },
+   {
+    "id": "W5O",
+    "file": "rfi-W5O-a5745672e1.bin",
+    "bytes": 49777,
+    "sha256": "a5745672e178626c16c641680090b80929a5ce20ceebb937df7709873f96e38e",
+    "summits": 22
+   },
+   {
+    "id": "W5A",
+    "file": "rfi-W5A-0430752358.bin",
+    "bytes": 76014,
+    "sha256": "0430752358ffa1cc30072b2679e491bbc384b3c4bb387ce85c542e12db3ee090",
+    "summits": 40
+   },
+   {
+    "id": "W0M",
+    "file": "rfi-W0M-a0ac8b7734.bin",
+    "bytes": 28927,
+    "sha256": "a0ac8b7734c48ad67b88b63a3c919fa5d4ff3c3278c0bc52cd79c65ee797e1b9",
+    "summits": 13
+   },
+   {
+    "id": "W0I",
+    "file": "rfi-W0I-5b154ae8f2.bin",
+    "bytes": 8228,
+    "sha256": "5b154ae8f27517da27a924f2f38852beadcf62186e4f529b9153ac5ccfe5f581",
+    "summits": 2
+   },
+   {
+    "id": "W9",
+    "file": "rfi-W9-acbd381ee8.bin",
+    "bytes": 72399,
+    "sha256": "acbd381ee8b3f828c2ca3aa24e8aaa80daddaea781a2877321f76942497a8f10",
+    "summits": 26
+   },
+   {
+    "id": "K0M",
+    "file": "rfi-K0M-a60c53e136.bin",
+    "bytes": 11035,
+    "sha256": "a60c53e136f11a75ff2194c551c6b7837aab2a3a53994317026aeeedbbed131d",
+    "summits": 4
+   },
+   {
+    "id": "W0D",
+    "file": "rfi-W0D-21bea679ee.bin",
+    "bytes": 97058,
+    "sha256": "21bea679ee80af08e864637f3a246aa653566bccda3d80701f3f5d40304d0e81",
+    "summits": 68
+   },
+   {
+    "id": "W7Y",
+    "file": "rfi-W7Y-f9030d119e.bin",
+    "bytes": 26075,
+    "sha256": "f9030d119ed21d3976c2f8217add1c58096a44e2ecc8f4c38fb6bdb7aac3cef8",
+    "summits": 21
+   },
+   {
+    "id": "W0N",
+    "file": "rfi-W0N-40c4cd6f26.bin",
+    "bytes": 6897,
+    "sha256": "40c4cd6f2661278a793486d11d14710683ad30d5d06707c1464b8f2d65d9556c",
+    "summits": 1
+   },
+   {
+    "id": "W7I",
+    "file": "rfi-W7I-60e60dde9b.bin",
+    "bytes": 132834,
+    "sha256": "60e60dde9bd9ad94b9021507bc108fcd35ac568e575ec0774b423e5d7b0b7fcd",
+    "summits": 82
+   },
+   {
+    "id": "W7O",
+    "file": "rfi-W7O-f8e5c1b545.bin",
+    "bytes": 356300,
+    "sha256": "f8e5c1b545c23be6be82a6e4b08ca0585b4223f78c75a81dd9d187f565bd44fb",
+    "summits": 252
+   },
+   {
+    "id": "W7N",
+    "file": "rfi-W7N-18be3ceb15.bin",
+    "bytes": 98508,
+    "sha256": "18be3ceb155397ce251c7573b9c12fb506172872c4e1615753539dd820ef8b05",
+    "summits": 50
+   },
+   {
+    "id": "KLA",
+    "file": "rfi-KLA-d13e8b62d1.bin",
+    "bytes": 9104,
+    "sha256": "d13e8b62d11401e13bddcbefacf6e950990a3d6c096d95a09b16f3e16ef1ee86",
+    "summits": 7
+   },
+   {
+    "id": "KLF",
+    "file": "rfi-KLF-649c022534.bin",
+    "bytes": 6562,
+    "sha256": "649c022534ca81ebf1f40b7bcca3be40147cf0abc90d50e654b5767503a7d218",
+    "summits": 3
+   },
+   {
+    "id": "W7W",
+    "file": "rfi-W7W-49752f6e3d.bin",
+    "bytes": 480790,
+    "sha256": "49752f6e3dea13190fcc855aad70e6885249aeb56e7750d62019c833efb7491e",
+    "summits": 349
+   },
+   {
+    "id": "W7M",
+    "file": "rfi-W7M-c68d83e9fb.bin",
+    "bytes": 47583,
+    "sha256": "c68d83e9fb3c995b7cfa0dc871edc8e63f0289abdd562e76d1f25935b2c45c8e",
+    "summits": 33
+   },
+   {
+    "id": "W8M",
+    "file": "rfi-W8M-f6cd595a92.bin",
+    "bytes": 42659,
+    "sha256": "f6cd595a92b64e2492b9a15e397bc3b8a811c51f9d35e1b08d3ba8ea1453a990",
+    "summits": 19
+   },
+   {
+    "id": "W1",
+    "file": "rfi-W1-08597baf0c.bin",
+    "bytes": 486257,
+    "sha256": "08597baf0c74bcb6e4f75a752b8f31137523bfec8701e13661bcc4219f8fc2d9",
+    "summits": 193
+   },
+   {
+    "id": "W2",
+    "file": "rfi-W2-129eb6ae33.bin",
+    "bytes": 311529,
+    "sha256": "129eb6ae33aae50b3707fb4aad3243e151e92460e7612c42b44f9753803ebb32",
+    "summits": 126
+   },
+   {
+    "id": "W3",
+    "file": "rfi-W3-3ffe43e908.bin",
+    "bytes": 272515,
+    "sha256": "3ffe43e908d9be69bc80ca628507f61fb2a282836e3bb8c5b5366e7990845e45",
+    "summits": 81
+   },
+   {
+    "id": "W8V",
+    "file": "rfi-W8V-b65cd7cc93.bin",
+    "bytes": 48454,
+    "sha256": "b65cd7cc93ab451065153a9749915a827da1dc09359729c9b89edcb0e2385fd1",
+    "summits": 27
+   },
+   {
+    "id": "W8O",
+    "file": "rfi-W8O-cb2d0b644a.bin",
+    "bytes": 71405,
+    "sha256": "cb2d0b644aae2bdc4f40fdb1778d7e11a6bc7dbce07146cfb48831458c11ee3f",
+    "summits": 16
+   },
+   {
+    "id": "W4V",
+    "file": "rfi-W4V-1669311950.bin",
+    "bytes": 284151,
+    "sha256": "1669311950d03b0ec1911ad24ba480d5c756a791fd86fc882f45c8a78db79149",
+    "summits": 128
+   },
+   {
+    "id": "W4K",
+    "file": "rfi-W4K-f85f783d69.bin",
+    "bytes": 39475,
+    "sha256": "f85f783d69d0612e86faf16a7c01b49edc5a393fc25b2d7bc43e7ffd66446f12",
+    "summits": 14
+   },
+   {
+    "id": "W4T",
+    "file": "rfi-W4T-153f2927ad.bin",
+    "bytes": 131891,
+    "sha256": "153f2927ad7cca33e523080c00ae14646ddddb39beb039f8c3df327877ffe047",
+    "summits": 64
+   },
+   {
+    "id": "W4A",
+    "file": "rfi-W4A-6edfd5f63b.bin",
+    "bytes": 47355,
+    "sha256": "6edfd5f63b14b6a43575343c51d039803984cc8b0bf7943752495fa794811185",
+    "summits": 17
+   },
+   {
+    "id": "W4G",
+    "file": "rfi-W4G-d039a093bb.bin",
+    "bytes": 151599,
+    "sha256": "d039a093bb335ed3c24640619c66f45ecf1b0b7de47691e3eeb7cdb843ebdf75",
+    "summits": 84
+   },
+   {
+    "id": "W4C",
+    "file": "rfi-W4C-d91eaea3e7.bin",
+    "bytes": 271425,
+    "sha256": "d91eaea3e7123b75216086be474bd1706c7a2ebf9194fb3d4b9705c709e45ff2",
+    "summits": 146
+   },
+   {
+    "id": "W5M",
+    "file": "rfi-W5M-8c1f90a5ba.bin",
+    "bytes": 1301,
+    "sha256": "8c1f90a5ba1f68a68aa377f3cbcff750d827fd42001d5f613aa562d0e3b727d9",
+    "summits": 1
+   },
+   {
+    "id": "KP4",
+    "file": "rfi-KP4-4329670de9.bin",
+    "bytes": 14397,
+    "sha256": "4329670de9a2996f4668e29054f057420326fffcebfedf690e072bc1929faa9f",
+    "summits": 6
+   }
+  ],
+  "total_bytes": 6086322
+ }
+}
