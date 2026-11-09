@@ -1,0 +1,50 @@
+# Publishes https://data.aj6x.com (GitHub Pages) from this repository, signing the manifest first when it was pushed
+# unsigned. Copied here by pipeline/publish.py of the VHF+ S2S app repository (docs/RELEASE-DATA.md); edit it there.
+# In use once Settings > Pages > Source is "GitHub Actions"; until then Pages serves main as it is, and the manifest
+# must be pushed signed (publish.py manifest --sign).
+# Secret, on the github-pages environment: S2S_SIGNING_KEY, the primary private key in base64 (from macOS Passwords).
+# Variable: S2S_KEY_ID, the key's id when it isn't "primary" (after a key recovery).
+name: Publish
+on:
+  push:
+    branches: [main]
+    paths: ['s2s/v1/manifest.json', 's2s/v1/manifest.json.sig']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install cryptography==42.0.2
+      - name: Sign the manifest, when it came unsigned
+        if: hashFiles('s2s/v1/manifest.json') != '' && hashFiles('s2s/v1/manifest.json.sig') == ''
+        env:
+          S2S_SIGNING_KEY: ${{ secrets.S2S_SIGNING_KEY }}
+        run: python3 -I tools/sign.py --app-keys tools/DataSources.swift --key-id "${{ vars.S2S_KEY_ID || 'primary' }}" s2s/v1/manifest.json
+      - name: Check the signature (Release keys only) and every file's size and SHA-256
+        if: hashFiles('s2s/v1/manifest.json') != ''
+        run: python3 -I tools/sign.py --app-keys tools/DataSources.swift --check --release --files s2s/v1/manifest.json
+      - name: Lay out the site
+        run: |
+          mkdir _site
+          cp -R s2s _site/
+          cp robots.txt _site/ 2>/dev/null || true
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
